@@ -20,7 +20,7 @@ position : sticky;
 
 .navbar li:hover {
   color : #ffffff;
-  background : #c9e166;
+  background : #4C7C4A;
   text-decoration : none;
   transition-duration : 2s;
   cursor : pointer;
@@ -47,17 +47,19 @@ position : sticky;
   
   }
 
-/*-----------estilo del boton registro-----------*/
+
 
 /* Estilos para el botón de registro */
 .nav-button {
-  background-color: #8aca4e; /* Cambia el color de fondo según tu preferencia */
+  background-color: #48744C; /* Cambia el color de fondo según tu preferencia */
   color : #ffff; /* Cambia el color del texto según tu preferencia */
-  padding: 15px 60px;
+  padding: 15px 70px;
   border-radius: 70px;
   font-size : 18px;
   margin-top : 10px;
   margin-bottom : 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   text-decoration: none;
   text-transform : uppercase;
   font-family : inherit;
@@ -66,10 +68,10 @@ position : sticky;
 }
 
 .nav-button:hover {
-  background-color: #c9e166; /* Cambia el color de fondo al pasar el mouse por encima */
+  background-color: #8aca4e; /* Cambia el color de fondo al pasar el mouse por encima */
   text-decoration: none;
   box-shadow : 2px 2px 5px rgb(0 0 0 / 0.835);
-  color :  #4c7c4a;
+  color :  #ffff;
 }
 
 
@@ -183,7 +185,7 @@ position : sticky;
 
       /*-----------Estilo menu superior redes sociales barra degradada-----------*/
       #topbar {
-      background : linear-gradient(to left, #c9e166 0%, #8aca4e, rgb(7, 104, 12) 100%);
+      background : linear-gradient(to left, #48744C 0%, #48744C, rgb(76, 124, 74) 100%);
       }
       .fab:hover {
       color : white;
@@ -210,33 +212,7 @@ position : sticky;
         .background-overlay {
         background : rgba(209, 228, 209, 0.226);
         }
-        input[type="text"], select, textarea {
-        width : 100%;
-        padding : 12px;
-        border : #ccc solid 1px;
-        border-radius : 20px;
-        resize : vertical;
-        }
-        label {
-        padding : 12px 12px 12px 0;
-        display : inline-block;
-        }
-        form {
-        border-radius : 20px;
-        background : linear-gradient(to left, #4c7c4a 0%, #4c7c4ab7, #4c7c4a 100%); 
-        height : auto;
-        float : right;
-        border-color : orangered;
-        color : #ffffff;
-        opacity: 0.9;
-        }
-        #formulario {
-        right : 0;
-        margin : 50px;
-        max-width : 500px;
-        padding : 20px;
-        }
-
+       
         
 
  /* footer */
@@ -244,7 +220,7 @@ position : sticky;
 
  .fas {
   font-size : 3rem;
-  background: #c9e166;
+  background: #ffffff;
   border-radius: 50px;
   width:5rem;
   padding: 15px 10px 15px 10px;
@@ -360,8 +336,20 @@ position : sticky;
 
   h2{
  color: #8aca4e;
-
+ 
 
   }
+
+
+ /* estilos pagina 02*/ borrar si no funciona 
+
+  .carousel-caption h2 {
+    margin-top: 200px; /* Ajusta el valor según tus necesidades */
+}
+
+
+
+
+
 
 
