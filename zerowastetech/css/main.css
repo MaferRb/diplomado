@@ -400,7 +400,7 @@ position : sticky;
 .icon {
   font-size: 3rem; /* Cambia el tamaño de fuente de los íconos */
   color: #8aca4e; /* Cambia el color de los íconos */
-  width: 80px;
+  width: 70px;
   padding: 15px;
   border-radius: 50px;
   background-color: #ffffff; /* Cambia el color de fondo de los íconos */
@@ -410,7 +410,7 @@ position : sticky;
 
 /* Estilos para los íconos más pequeños */
 .smaller-icon {
-  font-size: 80%; /* Tamaño más pequeño */
+  font-size: 300%; /* Tamaño más pequeño */
   margin: 0; /* Elimina el margen alrededor de los iconos */
   padding: 0; /* Elimina el espacio interior de los iconos */
 }
