@@ -1,0 +1,276 @@
+
+<!--Crear un archivo registro.html que contendrá el formulario de registro para la recoleccion del dispositivo electronico.  -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Recoleccion</title>
+
+    <!-- PERMITE LLAMAR LOS ICONOS -->
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- FRAMEWORK PARA ESTILO DE LA APLICACIÓN WEB EMBEBIDO -->
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- LLAMADO DEL ARCHIVO CSS PURO -->
+    <!--custom css-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#mynavbar" data-offset="50">
+    <header>
+          <!-- Menu redes sociales superior -->
+        <div class="navbar justify-content-end" id="topbar">
+            <a href="https://www.youtube.com/watch?v=NwssqEbuv8M" target="_blank" title="visite nuestro canal en Youtube"
+              data-toggle="tooltip">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" target="_blank" title="Siguenos en instagram" data-toggle="tooltip">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" title="Siguenos en Facebook" data-toggle="tooltip">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+        <!-- Cierre Menu redes sociales superior -->
+      
+      
+        <!-- Barra de navegacion -->
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="#mynavbar">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="zerowastetech" class="responsive" width="100" height="90">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+      
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+      
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Quehacemos.html" role="button"
+                    aria-haspopup="true" aria-expanded="false">Que hacemos</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#Quehacemos">Quienes Somos</a>
+                    <a class="dropdown-item" href="Quehacemos.html">Mision y Vision</a>
+                    <a class="dropdown-item" href="Quehacemos.html#valores">Nuestros Valores</a>
+                  </div>
+                </li>
+              </ul>
+               <!-- Agregar botón de recolección que enlace a la página de solicitud de recolección -->
+               <a class="nav-button nav-button-recoleccion" href="recoleccion.html">Programa tu Recogida</a>
+            </div>
+        </nav>
+      
+     <!-- Cierre barra de navegacion-->
+    </header>
+
+    <!-- Formulario para la recoleccion-->
+    <div class="container custom-container contenedor-es">
+        <h1 class="text-success text-center">Programa tu Recogida</h1>
+        <p class="text-body text-center">
+            Rellene el siguiente formulario y un representante de Zero Waste Tech se pondrá en contacto<br> para programar la recogida de sus dispositivos electrónicos.
+        </p>  
+        <p class="texto-especial text-body text-center">
+            Atención: No realizamos recogidas en direcciones empresariales.
+        </p>      
+    </div>
+
+    <div class="container formulario-container">
+        <h3 class="form text-success font-weight-bold">Registro para recolección</h3>
+        <form action="php/procesar_registro.php" method="post">
+            
+            <div class="row">
+                <div class="col">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+    
+                <div class="col">
+                    <label for="apellidos">Apellidos:</label><br>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="col">
+                    <label for="celular">Número de Teléfono:</label><br>
+                    <input type="tel" id="celular" name="celular">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <label for="direccion">Dirección:</label><br>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+    
+                <div class="col">
+                    <label for="ciudad">Ciudad:</label><br>
+                    <input type="text" id="ciudad" name="ciudad">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <label for="departamento">Departamento:</label><br>
+                    <input type="text" id="departamento" name="departamento">
+                </div>
+    
+                <div class="col">
+                    <label for="codigo_postal">Código Postal:</label><br>
+                    <input type="text" id="codigo-postal" name="codigo_postal">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea id="comentarios" name="comentarios"></textarea>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <label for="politicas">Acepto las políticas de la empresa: * Entiendo que Zero Waste Tech presta servicios a individuos Y hogares y aliados estratégicos como escuelas y universidades, pero no realiza recogidas en direcciones empresariales.</label>
+                    <input type="checkbox" id="politicas" name="politicas" required>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="button-container col">
+                    <button type="submit">Programar Recogida</button>
+                </div>
+            </div>
+        </form>
+    </div>   
+    <!-- Cierre Formulario para la recoleccion-->
+
+  <!-- Footer NO MODIFICAR-->
+  <footer class="page-footer pt-0">
+    <!-- Footer Elements -->
+    <div style="background-color:#4c7c4a;">
+      <div class="container-fluid text-center text-md-left mt-0">
+        <!-- Grid row -->
+        <div class="row mt-0">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 style="color:white;" class="text-uppercase font-weight-bold">¿Dónde Estamos?</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <!--Google map-->
+            <div id="map-container" class="z-depth-1-half map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1181.5723563471906!2d-75.52543291041374!3d5.051802694974968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCarrera+11c+%2345-11%2C+estambul+Manizales%2C+Caldas!5e0!3m2!1ses!2sco!4v1552358241746"
+                width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 style="color:white;" class="text-uppercase font-weight-bold">contacto</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-home mr-3"></i>Cali, Calle 11C 45-11, of 104
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>info@zerowastetech.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 57 317 456 92 47
+            </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 57 317 456 92 47
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 style="color:white;" class="text-uppercase font-weight-bold">horarios de atención</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>Lunes a Sabado de 7:00 a.m. a 6:30 p.m
+              Domingos 8:00 a.m a 12:00 pm</p>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </div>
+
+    <!-- INFORMACIÓN DE REDES SOCIALES NO MODIFICAR-->
+
+    <div style="background-color:#4c7c4a;">
+      <div id="socialfooter" class="container-fluid">
+        <h6 class="text-center" style="color:white;padding:20pt;">¡Conéctate con nosotros en las redes sociales!</h6>
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1" href="#" target="_blank" title="regalanos me gusta en facebook"
+              data-toggle="tooltip" data-placement="bottom"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-yt mx-1" href="https://www.youtube.com/channel/UCGn9ei6CnzBZVXUmyRvd_QQ"
+              target="_blank" title="conoce nuestro canal en youtube" data-toggle="tooltip" data-placement="bottom"><i
+                class="fab fa-youtube"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-ins mx-1" href="#" target="_blank" title="conoce más en instagram"
+              data-toggle="tooltip" data-placement="bottom"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-wsp mx-1" href="https://api.whatsapp.com/send?phone=573177355671" target="_blank"
+              title="envianos un mensaje de whatsapp" data-toggle="tooltip" data-placement="bottom"><i
+                class="fab fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Copyright AUTORES CAMBIAR EL COLOR DEL ENLACE DE LOS AUTORES-->
+      <div style="background-color:#4c7c4a;">
+        <div class="footer-copyright text-center py-3" style="color:whitesmoke;">© 2023 Copyright:
+          <a href="https://www.behance.net/mfrivas5195ca" target="_blank">María Rivas</a>
+          <a href="#">William Quintero</a>
+        </div>
+      </div>
+    </div>
+    <!-- Cierra Copyright -->
+  </footer>
+  
+  <!--bootstrap javascript-->
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>    
+</body>
+</html>

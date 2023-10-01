@@ -75,8 +75,28 @@ position : sticky;
   color :  #ffff;
 }
 
+/* Estilo para el botón "Recolección" */
+.nav-button-recoleccion {
+  background-color: #8aca4e; /* Cambia el color de fondo del botón según tus preferencias */
+  color: #fff; /* Cambia el color del texto del botón */
+  padding: 15px 70px;
+  border-radius: 70px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 20px; /* Ajusta el espacio izquierdo entre los botones */
+  margin-right: 20px; /* Ajusta el espacio derecho entre los botones */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  text-align: center;
+  transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
 
-/* Cierra Estilos para el botón de registro */
+.nav-button-recoleccion:hover {
+  background-color: #c9e166; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+
+
 
 /*-----------Cierra estilos de la barra de navegacion-----------*/
 
@@ -138,15 +158,13 @@ position : sticky;
 
   /*-----------Cierra Estilo de todos los botones de la aplicación-----------*/  
 
-    .container .row {
-    height : 500px;
-    }
+  /*-----------Estilos para parrafos de la clase row-----------*/ 
     .row p {
     font-size : 20px;
     opacity : 1;
     }
 
-    /*-----------Estilo seccion acerca de nuestra empresa pag 01-----------*/
+  /*-----------Estilo seccion acerca de nuestra empresa pag 01-----------*/
     #Quehacemos {
     background-color : #4c7c4a;
     width : 100%;
@@ -156,7 +174,7 @@ position : sticky;
     
     
     
-   /*-----------Proceso de reciclaje y reutilizacion-----------*/
+  /*-----------Proceso de reciclaje y reutilizacion-----------*/
   
    
 
@@ -168,7 +186,7 @@ position : sticky;
 
 
 
-    /*-----------Proceso de reciclaje y reutilizacion-----------*/
+  /*-----------Proceso de reciclaje y reutilizacion-----------*/
 
    /*-----------Estilo seccion video pagina 01-----------*/
      
@@ -375,5 +393,110 @@ position : sticky;
   margin: 0; /* Elimina el margen alrededor de los iconos */
   padding: 0; /* Elimina el espacio interior de los iconos */
 }
+
+
+/*----estilos pagina recoleccion-------*/
+
+/* Estilo para el contenedor específico */
+.contenedor-es {
+  background-color: #ffffff; /* Cambia el color de fondo del contenedor */
+  padding: 20px; /* Ajusta el espacio interior del contenedor */
+  border-radius: 10px; /* Agrega bordes redondos */
+  margin-top: 20px; /* Ajusta el espacio superior del contenedor */
+  margin-bottom: 10px; /* Ajusta el espacio inferior del contenedor */
+}
+
+/* Estilo para el texto dentro del contenedor específico */
+.contenedor-es p {
+  font-size: 20px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 10px; /* Ajusta el espacio inferior del párrafo */
+}
+
+/* Estilo para el segundo párrafo dentro del contenedor específico */
+.contenedor-es .texto-especial {
+  font-size: 18px; /* Tamaño de fuente */
+  color: #4c7c4a; /* Color del texto */
+  margin-bottom: 10px; /* Ajusta el espacio inferior del párrafo */
+  font-weight: normal; /* Elimina la negrita */
+}
+
+/* Estilo específico para el contenedor del formulario */
+.formulario-container {
+  background-color: #ffffff; /* Cambia el color de fondo del contenedor */
+  padding:20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 500px;
+  box-shadow : 2px 2px 5px rgba(77, 76, 76, 0.835);
+  max-width: 900px; /* Ancho máximo de 900 píxeles */
+  font-size: 20px; /* Tamaño de fuente */
+}
+form {
+  background-color: #ffffff; /* Cambia el color de fondo del formulario */
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px; 
+  margin-bottom: 2px; /* Reduzco el espacio vertical entre los campos */
+  border: 1px solid #ccc;
+  border-radius: 10px;  
+}
+
+/* Estilo para el botón de enviar */
+button[type="submit"] {
+  background-color: #8aca4e; /* Cambia el color de fondo del botón */
+  color: #fff; /* Cambia el color del texto del botón */
+  padding: 20px 80px;
+  border: none;
+  border-radius: 70px;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: inherit;
+  transition: background-color 0.3s; 
+  box-shadow : 2px 2px 5px rgb(0 0 0 / 0.835);
+  font-weight: bold;
+}
+
+/* Cambia el color del botón al pasar el cursor sobre él */
+button[type="submit"]:hover {
+  background-color: #c9e166; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+/* Estilo para reducir el espacio vertical entre los div col */
+
+/* Estilo para centrar el botón utilizando margin */
+.button-container {
+  text-align: center; /* Alinea el contenido al centro horizontalmente */
+}
+
+.button-container button {
+  margin: 0 auto; /* Centra el botón horizontalmente dentro del contenedor */
+}
+
+
+
+ .form {
+    text-align: center;
+    padding: 20px; 
+  }
+
+    
+
+
+
+
+
 
 
