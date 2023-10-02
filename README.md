@@ -21,5 +21,8 @@ Las tecnologías utilizadas en este proyecto incluyen:
 
 ## Pruebas de Backend
 
-Puedes ver las pruebas de backend [Enlace al video](https://laiberocol-my.sharepoint.com/personal/mrivasba_ibero_edu_co/_layouts/15/stream.aspx?id=%2Fpersonal%2Fmrivasba%5Fibero%5Fedu%5Fco%2FDocuments%2Fpruebas%2Emp4&referrer=OneDriveForBusiness&referrerScenario=OpenFile){:target="_blank"}se evidenciará las pruebas de backend.
+[Puedes ver las pruebas de backend](https://laiberocol-my.sharepoint.com/personal/mrivasba_ibero_edu_co/_layouts/15/stream.aspx?id=%2Fpersonal%2Fmrivasba%5Fibero%5Fedu%5Fco%2FDocuments%2Fpruebas%2Emp4&referrer=OneDriveForBusiness&referrerScenario=OpenFile){:target="_blank"}
+
+Se evidenciará las pruebas de backend.
+
 
