@@ -32,6 +32,13 @@ $recolecciones = $recoleccion->getAll();
     <title>Lista de Recolecciones</title>
 </head>
 <body>
+    <!-- Mensaje de éxito -->
+    <?php
+    if (isset($_GET["exito"])) {
+        $mensajeExito = $_GET["exito"];
+        echo '<div class="alert alert-success">' . htmlspecialchars($mensajeExito) . '</div>';
+    }
+    ?>
     <h1>Lista de Recolecciones</h1>
     <table>
         <tr>
