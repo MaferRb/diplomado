@@ -43,8 +43,8 @@ $recoleccion = new Recoleccion($servername, $username, $password, $dbname);
     crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container formulario-container">
-        <h1 class="form text-success font-weight-bold">Editar Recoleccion</h1>
+    <div class="container">
+        <h1 class="form text-success text-center font-weight-bold mt-3 mb-3">Editar Recoleccion</h1>
 
         <?php
        
@@ -89,51 +89,63 @@ $recoleccion = new Recoleccion($servername, $username, $password, $dbname);
         }
         ?>
 
-        <form method="POST" action="../php/editar_recoleccion.php?id=<?php echo $resultado["ID"] ?>">
+     <form method="POST" action="../php/editar_recoleccion.php?id=<?php echo $resultado["ID"] ?>">
             <input type="hidden" id="ID" name="ID" value="<?php echo $resultado["ID"] ?>">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" value="<?php echo $resultado["nombre"] ?>">
-            <br>
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" value="<?php echo $resultado["apellidos"]; ?>">
-            <br>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" value="<?php echo $resultado["email"]; ?>">
-            <br>
-
-            <label for="celular">Número de Celular:</label>
-            <input type="tel" id="celular" name="celular" value="<?php echo $resultado["celular"]; ?>">
-            <br>
-
-            <label for="direccion">Dirección:</label>
-            <input class="formulario-container" type="text" id="direccion" name="direccion" value="<?php echo $resultado["direccion"]; ?>">
-            <br>
-
-            <label for="ciudad">Ciudad:</label>
-            <input class="formulario-container" type="text" id="ciudad" name="ciudad" value="<?php echo $resultado["ciudad"]; ?>">
-            <br>
-
-            <label for="departamento">Departamento:</label>
-            <input class="formulario-container" type="text" id="departamento" name="departamento" value="<?php echo $resultado["departamento"]; ?>">
-            <br>
-
-            <label for="codigo_postal">Código Postal:</label>
-            <input class="formulario-container" type="text" id="codigo_postal" name="codigo_postal" value="<?php echo $resultado["codigo_postal"]; ?>">
-            <br>
-
-            <label for="comentarios">Comentarios:</label>
-            <textarea class="formulario-container" id="comentarios" name="comentarios"><?php echo $resultado["comentarios"]; ?></textarea>
-            <br>
-
-            <label for="politicas">Acepto las políticas de la empresa:</label>
-            <input class="formulario-container" type="checkbox" id="politicas" name="politicas" <?php if ($resultado["acepta_politicas"] == 1) echo "checked"; ?>>
-            <br>
-            <div class="button-container">
-            <button class="formulario-container" type="submit">Guardar Cambios</button>
+            
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" value="<?php echo $resultado["nombre"] ?>">
             </div>
-        </form>
+
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" class="form-control" value="<?php echo $resultado["apellidos"]; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control" value="<?php echo $resultado["email"]; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="celular">Número de Celular:</label>
+                <input type="tel" id="celular" name="celular" class="form-control" value="<?php echo $resultado["celular"]; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" class="form-control" value="<?php echo $resultado["direccion"]; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" class="form-control" value="<?php echo $resultado["ciudad"]; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="departamento">Departamento:</label>
+                <input type="text" id="departamento" name="departamento" class="form-control" value="<?php echo $resultado["departamento"]; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="codigo_postal">Código Postal:</label>
+                <input type="text" id="codigo_postal" name="codigo_postal" class="form-control" value="<?php echo $resultado["codigo_postal"]; ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" class="form-control"><?php echo $resultado["comentarios"]; ?></textarea>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" id="politicas" name="politicas" class="form-check-input" <?php if ($resultado["acepta_politicas"] == 1) echo "checked"; ?>>
+                <label class="form-check-label" for="politicas">Acepto las políticas de la empresa</label>
+            </div>
+
+            <div class="button-container">
+                <button class="btn btn-success" type="submit">Guardar Cambios</button>
+            </div>
+     </form>
     </div>
     <!--bootstrap javascript-->
 

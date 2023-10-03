@@ -48,8 +48,6 @@ position : sticky;
   
   }
 
-
-
 /* Estilos para el botón de registro */
 .nav-button {
   background-color: #48744C; /* Cambia el color de fondo según tu preferencia */
@@ -95,8 +93,6 @@ position : sticky;
 .nav-button-recoleccion:hover {
   background-color: #c9e166; /* Cambia el color de fondo al pasar el mouse por encima */
 }
-
-
 
 /*-----------Cierra estilos de la barra de navegacion-----------*/
 
@@ -230,7 +226,7 @@ position : sticky;
       color : white;
       }
       
-    /*-----------Cierra Estilo menu superior redes sociales barra degradada-----------*/
+  /*-----------Cierra Estilo menu superior redes sociales barra degradada-----------*/
           
 
  /* footer */
@@ -492,11 +488,6 @@ button[type="submit"]:hover {
     padding: 20px; 
   }
 
-    
-
-
-
-
-
-
-
+  
+  
+  
