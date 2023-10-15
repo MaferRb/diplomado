@@ -56,7 +56,7 @@ position : sticky;
   border-radius: 70px;
   font-size : 18px;
   margin-top : 10px;
-  margin-bottom : 20px;
+  margin-bottom : 50px;
   margin-left: 40px;
   margin-right: 40px;
   text-decoration: none;
@@ -74,21 +74,23 @@ position : sticky;
 }
 
 /* Estilo para el botón "Recolección" */
+
 .nav-button-recoleccion {
   background-color: #8aca4e; /* Cambia el color de fondo del botón según tus preferencias */
   color: #fff; /* Cambia el color del texto del botón */
-  padding: 15px 70px;
+  padding: 10px 40px; /* Reducido el padding */
   border-radius: 70px;
-  font-size: 18px;
+  font-size: 16px; /* Reducido el tamaño del texto */
   margin-top: 10px;
-  margin-left: 20px; /* Ajusta el espacio izquierdo entre los botones */
-  margin-right: 20px; /* Ajusta el espacio derecho entre los botones */
+  margin-left: 10px; /* Ajusta el espacio izquierdo entre los botones */
+  margin-right: 10px; /* Ajusta el espacio derecho entre los botones */
   text-decoration: none;
   text-transform: uppercase;
   font-family: inherit;
   text-align: center;
   transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
 }
+
 
 .nav-button-recoleccion:hover {
   background-color: #c9e166; /* Cambia el color de fondo al pasar el mouse por encima */
@@ -108,6 +110,24 @@ position : sticky;
   background-size : cover;
   
   }
+  /* Estilos para los textos en dispositivos móviles */
+@media (max-width: 767px) {
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para que los textos sean legibles */
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    text-align: center; /* Texto centrado en dispositivos móviles */
+    padding: 10px; /* Espacio alrededor del texto */
+    font-size: 16px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+  }
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+  max-width: 100%; /* Asegurar que la imagen no se desborde en dispositivos móviles */
+  height: auto; /* Mantener la relación de aspecto de la imagen */
+}
+
+
 
 /*-----------estilo de la tipografia del carrusel-----------*/
 
@@ -170,21 +190,9 @@ position : sticky;
     
     
     
-  /*-----------Proceso de reciclaje y reutilizacion-----------*/
-  
-   
+ 
 
-
-  
-
-
-
-
-
-
-  /*-----------Proceso de reciclaje y reutilizacion-----------*/
-
-   /*-----------Estilo seccion video pagina 01-----------*/
+  /*-----------Estilo seccion video pagina 01-----------*/
      
       #primervideo {
       background-color : #ffffff;   
@@ -195,7 +203,7 @@ position : sticky;
       margin-bottom: 2rem;
       }
      
-    /*-----------Estilo menu superior redes sociales barra degradada-----------*/
+/*-----------Estilo menu superior redes sociales barra degradada-----------*/
 
       .divider {
       background-color : #ffff;
