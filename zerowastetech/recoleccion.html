@@ -65,12 +65,14 @@
       
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">Inicio <span class="sr-only">(current)</span></a>
+
                 </li>
       
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Quehacemos.html" role="button"
-                    aria-haspopup="true" aria-expanded="false">Que hacemos</a>
+                    aria-haspopup="true" aria-expanded="false" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">Que hacemos</a>
+
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#Quehacemos">Quienes Somos</a>
                     <a class="dropdown-item" href="Quehacemos.html">Mision y Vision</a>
@@ -79,10 +81,11 @@
                 </li>
               </ul>
                <!-- Agregar botón de recolección que enlace a la página de solicitud de recolección -->
-               <a class="nav-button nav-button-recoleccion" href="recoleccion.html">Programa tu Recogida</a>
+                <div class="d-flex align-items-center">
+                  <a class="nav-button nav-button-recoleccion btn-sm mb-2" href="recoleccion.html">Programa tu Recogida</a>
+                </div>
             </div>
         </nav>
-      
      <!-- Cierre barra de navegacion-->
     </header>
 
@@ -251,6 +254,7 @@
                 class="fab fa-whatsapp"></i></a>
           </li>
         </ul>
+        
       </div>
 
       <!-- Copyright AUTORES CAMBIAR EL COLOR DEL ENLACE DE LOS AUTORES-->
